@@ -12,7 +12,7 @@ public class Server {
     public void run() throws IOException{
         int port = 8010;
         ServerSocket socket = new ServerSocket(port);
-        socket.setSoTimeout(timeout:10000);
+        socket.setSoTimeout(10000);
         while (true) {
             try {
                 System.out.println("Server is listening on port"+port);
